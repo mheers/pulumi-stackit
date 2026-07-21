@@ -1,6 +1,6 @@
 import * as pulumi from "@pulumi/pulumi";
-import * as stackit from "@stackitcloud/pulumi-stackit";
-import { ImageConfig } from "@stackitcloud/pulumi-stackit/types/input";
+import * as stackit from "@mheers/pulumi-stackit";
+import { ImageConfig } from "@mheers/pulumi-stackit/types/input";
 
 export const imageProjectId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
 export const imageName = "example-image-name";

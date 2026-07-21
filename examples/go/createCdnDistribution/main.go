@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
-	"github.com/stackitcloud/pulumi-stackit/sdk/go/stackit"
+	"github.com/mheers/pulumi-stackit/sdk/go/stackit"
 )
 
 func main() {

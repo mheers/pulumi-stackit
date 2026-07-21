@@ -10,7 +10,7 @@
     },
     "dependencies": {
         "@pulumi/pulumi": "^3.113.0",
-        "@stackitcloud/pulumi-stackit": "file:../../../../sdk/nodejs/bin"
+        "@mheers/pulumi-stackit": "file:../../../../sdk/nodejs/bin"
     },
     "scripts": {
         "test": "mocha -r ts-node/register test.ts"

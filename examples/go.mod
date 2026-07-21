@@ -1,4 +1,4 @@
-module github.com/stackitcloud/pulumi-stackit/examples
+module github.com/mheers/pulumi-stackit/examples
 
 go 1.23.0
 

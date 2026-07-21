@@ -1,5 +1,5 @@
 import * as pulumi from "@pulumi/pulumi";
-import * as stackit from "@stackitcloud/pulumi-stackit";
+import * as stackit from "@mheers/pulumi-stackit";
 
 export const networkAreaRouteOrganizationId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
 export const networkAreaId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx1";

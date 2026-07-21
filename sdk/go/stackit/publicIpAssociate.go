@@ -9,7 +9,7 @@ import (
 
 	"errors"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
-	"github.com/stackitcloud/pulumi-stackit/sdk/go/stackit/internal"
+	"github.com/mheers/pulumi-stackit/sdk/go/stackit/internal"
 )
 
 // Associates an existing public IP to a network interface. This is useful for situations where you have a pre-allocated public IP or unable to use the `PublicIp` resource to create a new public IP. Must have a `region` specified in the provider configuration.

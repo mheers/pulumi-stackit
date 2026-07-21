@@ -1,5 +1,5 @@
 import * as pulumi from "@pulumi/pulumi";
-import * as stackit from "@stackitcloud/pulumi-stackit";
+import * as stackit from "@mheers/pulumi-stackit";
 import * as std from "@pulumi/std";
 
 // Create a key pair

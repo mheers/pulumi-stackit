@@ -1,5 +1,5 @@
 import * as pulumi from "@pulumi/pulumi";
-import * as stackit from "@stackitcloud/pulumi-stackit";
+import * as stackit from "@mheers/pulumi-stackit";
 
 const attachedNetworkInterface = new stackit.ServerNetworkInterfaceAttach("attached_network_interface", {
     projectId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",              // Replace with your actual project ID

@@ -1,4 +1,4 @@
-module github.com/stackitcloud/pulumi-stackit/sdk
+module github.com/mheers/pulumi-stackit/sdk
 
 go 1.25.8
 

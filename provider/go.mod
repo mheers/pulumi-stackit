@@ -1,13 +1,16 @@
-module github.com/stackitcloud/pulumi-stackit/provider
+module github.com/mheers/pulumi-stackit/provider
 
 go 1.26.0
 
 replace github.com/hashicorp/terraform-plugin-sdk/v2 => github.com/pulumi/terraform-plugin-sdk/v2 v2.0.0-20260318212141-5525259d096b
 
+replace github.com/mheers/pulumi-stackit/provider/pkg/version => ./pkg/version
+replace github.com/mheers/pulumi-stackit/provider/shim => ./shim
+
 require (
 	github.com/pulumi/pulumi-terraform-bridge/v3 v3.128.0
-	github.com/stackitcloud/pulumi-stackit/provider/pkg/version v0.0.5
-	github.com/stackitcloud/pulumi-stackit/provider/shim v0.0.5
+	github.com/mheers/pulumi-stackit/provider/pkg/version v0.0.5
+	github.com/mheers/pulumi-stackit/provider/shim v0.0.5
 )
 
 require (

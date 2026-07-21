@@ -27,7 +27,7 @@ setup(name='pulumi_stackit',
       keywords='pulumi stackit category/cloud',
       url='https://www.pulumi.com',
       project_urls={
-          'Repository': 'https://github.com/stackitcloud/pulumi-stackit'
+          'Repository': 'https://github.com/mheers/pulumi-stackit'
       },
       license='Apache-2.0',
       packages=find_packages(),

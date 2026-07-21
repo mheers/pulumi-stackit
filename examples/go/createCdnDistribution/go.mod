@@ -4,10 +4,10 @@ go 1.25.8
 
 require (
 	github.com/pulumi/pulumi/sdk/v3 v3.230.0
-	github.com/stackitcloud/pulumi-stackit/sdk v0.0.0-00010101000000-000000000000
+	github.com/mheers/pulumi-stackit/sdk v0.0.0-00010101000000-000000000000
 )
 
-replace github.com/stackitcloud/pulumi-stackit/sdk => ../../../sdk
+replace github.com/mheers/pulumi-stackit/sdk => ../../../sdk
 
 require (
 	dario.cat/mergo v1.0.0 // indirect

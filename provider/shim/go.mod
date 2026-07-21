@@ -1,4 +1,4 @@
-module github.com/stackitcloud/pulumi-stackit/provider/shim
+module github.com/mheers/pulumi-stackit/provider/shim
 
 go 1.26.0
 
