@@ -53,7 +53,7 @@ namespace Pulumi.Stackit
         {
             var dst = src ?? new global::Pulumi.InvokeOptions{};
             dst.Version = src?.Version ?? Version;
-            dst.PluginDownloadURL = src?.PluginDownloadURL ?? "github://api.github.com/stackitcloud/pulumi-stackit";
+            dst.PluginDownloadURL = src?.PluginDownloadURL ?? "github://api.github.com/mheers/pulumi-stackit";
             return dst;
         }
 
@@ -61,7 +61,7 @@ namespace Pulumi.Stackit
         {
             var dst = src ?? new global::Pulumi.InvokeOutputOptions{};
             dst.Version = src?.Version ?? Version;
-            dst.PluginDownloadURL = src?.PluginDownloadURL ?? "github://api.github.com/stackitcloud/pulumi-stackit";
+            dst.PluginDownloadURL = src?.PluginDownloadURL ?? "github://api.github.com/mheers/pulumi-stackit";
             return dst;
         }
 

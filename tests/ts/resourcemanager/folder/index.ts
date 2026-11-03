@@ -1,5 +1,5 @@
 import * as pulumi from "@pulumi/pulumi";
-import * as stackit from "@stackitcloud/pulumi-stackit";
+import * as stackit from "@mheers/pulumi-stackit";
 
 export const folderContainerId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
 export const folderName = "example-folder-name";

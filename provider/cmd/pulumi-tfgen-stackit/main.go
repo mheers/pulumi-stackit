@@ -16,7 +16,7 @@ package main
 
 import (
 	"github.com/pulumi/pulumi-terraform-bridge/v3/pkg/pf/tfgen"
-	stackit "github.com/stackitcloud/pulumi-stackit/provider"
+	stackit "github.com/mheers/pulumi-stackit/provider"
 )
 
 func main() {

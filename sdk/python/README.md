@@ -7,7 +7,7 @@
 
 # STACKIT Pulumi Provider (ALPHA)
 
-[![GitHub License](https://img.shields.io/github/license/stackitcloud/pulumi-stackit)](https://www.apache.org/licenses/LICENSE-2.0)
+[![GitHub License](https://img.shields.io/github/license/mheers/pulumi-stackit)](https://www.apache.org/licenses/LICENSE-2.0)
 
 > [!WARNING]
 > This STACKIT Pulumi Provider is in an ALPHA state. Currently, only IaaS and Resource Manager services in TypeScript are supported. More functionality will be supported soon. Your feedback is appreciated! Feel free to open GitHub issues to provide feature requests and bug reports.
@@ -35,13 +35,13 @@ Apache 2.0
 To use from JavaScript or TypeScript in Node.js, install using either `npm`:
 
 ```bash
-npm install @stackitcloud/pulumi-stackit
+npm install @mheers/pulumi-stackit
 ```
 
 or `yarn`:
 
 ```bash
-yarn add @stackitcloud/pulumi-stackit
+yarn add @mheers/pulumi-stackit
 ```
 
 ## Getting started

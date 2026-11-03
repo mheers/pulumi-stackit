@@ -124,7 +124,7 @@ namespace Pulumi.Stackit
             var defaultOptions = new CustomResourceOptions
             {
                 Version = Utilities.Version,
-                PluginDownloadURL = "github://api.github.com/stackitcloud/pulumi-stackit",
+                PluginDownloadURL = "github://api.github.com/mheers/pulumi-stackit",
             };
             var merged = CustomResourceOptions.Merge(defaultOptions, options);
             // Override the ID if one was specified for consistency with other language SDKs.

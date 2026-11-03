@@ -9,7 +9,7 @@ import (
 
 	"errors"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
-	"github.com/stackitcloud/pulumi-stackit/sdk/go/stackit/internal"
+	"github.com/mheers/pulumi-stackit/sdk/go/stackit/internal"
 )
 
 // Server update enable resource schema. Must have a `region` specified in the provider configuration. Always use only one enable resource per server.

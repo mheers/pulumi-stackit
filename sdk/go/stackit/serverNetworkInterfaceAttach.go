@@ -9,7 +9,7 @@ import (
 
 	"errors"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
-	"github.com/stackitcloud/pulumi-stackit/sdk/go/stackit/internal"
+	"github.com/mheers/pulumi-stackit/sdk/go/stackit/internal"
 )
 
 // Network interface attachment resource schema. Attaches a network interface to a server. The attachment only takes full effect after server reboot.

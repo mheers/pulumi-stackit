@@ -103,7 +103,7 @@ namespace Pulumi.Stackit
             var defaultOptions = new CustomResourceOptions
             {
                 Version = Utilities.Version,
-                PluginDownloadURL = "github://api.github.com/stackitcloud/pulumi-stackit",
+                PluginDownloadURL = "github://api.github.com/mheers/pulumi-stackit",
                 AdditionalSecretOutputs =
                 {
                     "token",

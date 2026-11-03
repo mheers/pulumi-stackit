@@ -9,11 +9,11 @@
     ],
     "homepage": "https://www.pulumi.com",
     "license": "Apache-2.0",
-    "attribution": "This Pulumi package is based on the [`stackit` Terraform Provider](https://github.com/stackitcloud/terraform-provider-stackit).",
-    "repository": "https://github.com/stackitcloud/pulumi-stackit",
-    "logoUrl": "https://raw.githubusercontent.com/stackitcloud/pulumi-stackit/main/.github/images/stackit-logo.svg",
-    "pluginDownloadURL": "github://api.github.com/stackitcloud/pulumi-stackit",
-    "publisher": "stackitcloud",
+    "attribution": "This Pulumi package is based on the [`stackit` Terraform Provider](https://github.com/mheers/terraform-provider-stackit).",
+    "repository": "https://github.com/mheers/pulumi-stackit",
+    "logoUrl": "https://raw.githubusercontent.com/mheers/pulumi-stackit/main/.github/images/stackit-logo.svg",
+    "pluginDownloadURL": "github://api.github.com/mheers/pulumi-stackit",
+    "publisher": "mheers",
     "meta": {
         "moduleFormat": "(.*)(?:/[^/]*)"
     },
@@ -25,14 +25,14 @@
             "compatibility": "tfbridge20"
         },
         "go": {
-            "importBasePath": "github.com/stackitcloud/pulumi-stackit/sdk/go/stackit",
+            "importBasePath": "github.com/mheers/pulumi-stackit/sdk/go/stackit",
             "generateResourceContainerTypes": true,
             "generateExtraInputTypes": true
         },
         "nodejs": {
-            "packageName": "@stackitcloud/pulumi-stackit",
+            "packageName": "@mheers/pulumi-stackit",
             "packageDescription": "A Pulumi package for creating and managing stackit resources.",
-            "readme": "\u003e This provider is a derived work of the [Terraform Provider](https://github.com/stackitcloud/terraform-provider-stackit)\n\u003e distributed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/). If you encounter a bug or missing feature,\n\u003e first check the [`pulumi-stackit` repo](https://github.com/stackitcloud/pulumi-stackit/issues); however, if that doesn't turn up anything,\n\u003e please consult the source [`terraform-provider-stackit` repo](https://github.com/stackitcloud/terraform-provider-stackit/issues).",
+            "readme": "\u003e This provider is a derived work of the [Terraform Provider](https://github.com/mheers/terraform-provider-stackit)\n\u003e distributed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/). If you encounter a bug or missing feature,\n\u003e first check the [`pulumi-stackit` repo](https://github.com/mheers/pulumi-stackit/issues); however, if that doesn't turn up anything,\n\u003e please consult the source [`terraform-provider-stackit` repo](https://github.com/mheers/terraform-provider-stackit/issues).",
             "dependencies": {
                 "@pulumi/pulumi": "^3.0.0"
             },
@@ -48,7 +48,7 @@
             "requires": {
                 "pulumi": "\u003e=3.0.0,\u003c4.0.0"
             },
-            "readme": "\u003e This provider is a derived work of the [Terraform Provider](https://github.com/stackitcloud/terraform-provider-stackit)\n\u003e distributed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/). If you encounter a bug or missing feature,\n\u003e first check the [`pulumi-stackit` repo](https://github.com/stackitcloud/pulumi-stackit/issues); however, if that doesn't turn up anything,\n\u003e please consult the source [`terraform-provider-stackit` repo](https://github.com/stackitcloud/terraform-provider-stackit/issues).",
+            "readme": "\u003e This provider is a derived work of the [Terraform Provider](https://github.com/mheers/terraform-provider-stackit)\n\u003e distributed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/). If you encounter a bug or missing feature,\n\u003e first check the [`pulumi-stackit` repo](https://github.com/mheers/pulumi-stackit/issues); however, if that doesn't turn up anything,\n\u003e please consult the source [`terraform-provider-stackit` repo](https://github.com/mheers/terraform-provider-stackit/issues).",
             "compatibility": "tfbridge20",
             "pyproject": {}
         }
@@ -23503,7 +23503,7 @@
             }
         },
         "stackit:index/serviceAccountFederatedIdentityProvider:ServiceAccountFederatedIdentityProvider": {
-            "description": "Manages a federated identity provider for a STACKIT service account to enable workload identity federation.\n## Example Usage\n\n### Create a federated identity provider\n```terraform\nresource \"stackit_service_account\" \"sa\" {\n  project_id = \"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\"\n  name       = \"my-service-account\"\n}\n\nresource \"stackit_service_account_federated_identity_provider\" \"provider\" {\n  project_id            = stackit_service_account.sa.project_id\n  service_account_email = stackit_service_account.sa.email\n  name                  = \"my-provider\"\n  issuer                = \"https://auth.example.com\"\n\n  assertions = [\n    {\n      item     = \"aud\" # Including the audience check is mandatory for security reasons, the value is free to choose\n      operator = \"equals\"\n      value    = \"sts.accounts.stackit.cloud\"\n    },\n    {\n      item     = \"email\"\n      operator = \"equals\"\n      value    = \"terraform@example.com\"\n    }\n  ]\n}\n\n```\n\n\n### Additional Examples\n\n```terraform\nresource \"stackit_service_account\" \"sa\" {\n  project_id = \"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\"\n  name       = \"my-service-account\"\n}\n\nresource \"stackit_service_account_federated_identity_provider\" \"provider\" {\n  project_id            = stackit_service_account.sa.project_id\n  service_account_email = stackit_service_account.sa.email\n  name                  = \"gh-actions\"\n  issuer                = \"https://token.actions.githubusercontent.com\"\n\n  assertions = [\n    {\n      item     = \"aud\"\n      operator = \"equals\"\n      value    = \"sts.accounts.stackit.cloud\"\n    },\n    {\n      item     = \"sub\"\n      operator = \"equals\"\n      value    = \"repo:stackitcloud/terraform-provider-stackit:ref:refs/heads/main\"\n    }\n  ]\n}\n```\n\n## Import\n\nIn Terraform v1.5.0 and later, the ` + \"`\" + \u003cspan pulumi-lang-nodejs=\"`import`\" pulumi-lang-dotnet=\"`Import`\" pulumi-lang-go=\"`import`\" pulumi-lang-python=\"`import`\" pulumi-lang-yaml=\"`import`\" pulumi-lang-java=\"`import`\"\u003e`import`\u003c/span\u003e + \"`\" + ` block can be used with the ` + \"`\" + \u003cspan pulumi-lang-nodejs=\"`id`\" pulumi-lang-dotnet=\"`Id`\" pulumi-lang-go=\"`id`\" pulumi-lang-python=\"`id`\" pulumi-lang-yaml=\"`id`\" pulumi-lang-java=\"`id`\"\u003e`id`\u003c/span\u003e + \"`\" + ` attribute, for example:\n\n```terraform\n# Only use the import statement, if you want to import an existing federated identity provider\nimport {\n  to = stackit_service_account_federated_identity_provider.import-example\n  id = \"${var.project_id},${var.service_account_email},${var.federation_id}\"\n}\n```\n\n",
+            "description": "Manages a federated identity provider for a STACKIT service account to enable workload identity federation.\n## Example Usage\n\n### Create a federated identity provider\n```terraform\nresource \"stackit_service_account\" \"sa\" {\n  project_id = \"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\"\n  name       = \"my-service-account\"\n}\n\nresource \"stackit_service_account_federated_identity_provider\" \"provider\" {\n  project_id            = stackit_service_account.sa.project_id\n  service_account_email = stackit_service_account.sa.email\n  name                  = \"my-provider\"\n  issuer                = \"https://auth.example.com\"\n\n  assertions = [\n    {\n      item     = \"aud\" # Including the audience check is mandatory for security reasons, the value is free to choose\n      operator = \"equals\"\n      value    = \"sts.accounts.stackit.cloud\"\n    },\n    {\n      item     = \"email\"\n      operator = \"equals\"\n      value    = \"terraform@example.com\"\n    }\n  ]\n}\n\n```\n\n\n### Additional Examples\n\n```terraform\nresource \"stackit_service_account\" \"sa\" {\n  project_id = \"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\"\n  name       = \"my-service-account\"\n}\n\nresource \"stackit_service_account_federated_identity_provider\" \"provider\" {\n  project_id            = stackit_service_account.sa.project_id\n  service_account_email = stackit_service_account.sa.email\n  name                  = \"gh-actions\"\n  issuer                = \"https://token.actions.githubusercontent.com\"\n\n  assertions = [\n    {\n      item     = \"aud\"\n      operator = \"equals\"\n      value    = \"sts.accounts.stackit.cloud\"\n    },\n    {\n      item     = \"sub\"\n      operator = \"equals\"\n      value    = \"repo:mheers/terraform-provider-stackit:ref:refs/heads/main\"\n    }\n  ]\n}\n```\n\n## Import\n\nIn Terraform v1.5.0 and later, the ` + \"`\" + \u003cspan pulumi-lang-nodejs=\"`import`\" pulumi-lang-dotnet=\"`Import`\" pulumi-lang-go=\"`import`\" pulumi-lang-python=\"`import`\" pulumi-lang-yaml=\"`import`\" pulumi-lang-java=\"`import`\"\u003e`import`\u003c/span\u003e + \"`\" + ` block can be used with the ` + \"`\" + \u003cspan pulumi-lang-nodejs=\"`id`\" pulumi-lang-dotnet=\"`Id`\" pulumi-lang-go=\"`id`\" pulumi-lang-python=\"`id`\" pulumi-lang-yaml=\"`id`\" pulumi-lang-java=\"`id`\"\u003e`id`\u003c/span\u003e + \"`\" + ` attribute, for example:\n\n```terraform\n# Only use the import statement, if you want to import an existing federated identity provider\nimport {\n  to = stackit_service_account_federated_identity_provider.import-example\n  id = \"${var.project_id},${var.service_account_email},${var.federation_id}\"\n}\n```\n\n",
             "properties": {
                 "assertions": {
                     "type": "array",

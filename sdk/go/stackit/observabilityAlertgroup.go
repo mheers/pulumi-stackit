@@ -9,7 +9,7 @@ import (
 
 	"errors"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
-	"github.com/stackitcloud/pulumi-stackit/sdk/go/stackit/internal"
+	"github.com/mheers/pulumi-stackit/sdk/go/stackit/internal"
 )
 
 // Observability alert group resource schema. Used to create alerts based on metrics (Thanos). Must have a `region` specified in the provider configuration. This service is only available when the provider is configured with `defaultRegion = "eu01"`.

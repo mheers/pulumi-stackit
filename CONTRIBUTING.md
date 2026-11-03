@@ -16,7 +16,7 @@ Prerequisites:
 
 - [`Pulumi`](https://www.pulumi.com/docs/iac/download-install/)
 - [`pulumictl`](https://github.com/pulumi/pulumictl)
-- [`Go`](https://go.dev/doc/install) 1.26+
+- [`Go`](https://go.dev/doc/install) 1.27+
 - [`dotnet`](https://dotnet.microsoft.com/en-us/download) 9.0.x
 - [`node`](https://nodejs.org/en/download) 20.x
 - [`python`](https://www.python.org/downloads) 3.9
@@ -35,7 +35,7 @@ These commands can be executed from the project root:
 
 To make your contribution, follow these steps:
 
-1. Check open or recently closed [Pull Requests](https://github.com/stackitcloud/pulumi-stackit/pulls) and [Issues](https://github.com/stackitcloud/pulumi-stackit/issues) to make sure the contribution you are making has not been already tackled by someone else.
+1. Check open or recently closed [Pull Requests](https://github.com/mheers/pulumi-stackit/pulls) and [Issues](https://github.com/mheers/pulumi-stackit/issues) to make sure the contribution you are making has not been already tackled by someone else.
 2. Fork the repo.
 3. Make your changes in a branch that is up-to-date with the original repo's `main` branch.
 4. Commit your changes including a descriptive message (see our [commit message guide](https://github.com/stackitcloud/terraform-provider-stackit/blob/main/CONTRIBUTING.md#commit-messages) in the STACKIT Terraform provider repository).
@@ -44,7 +44,7 @@ To make your contribution, follow these steps:
 
 ## Bug Reports
 
-If you would like to report a bug, please open a [GitHub issue](https://github.com/stackitcloud/pulumi-stackit/issues/new).
+If you would like to report a bug, please open a [GitHub issue](https://github.com/mheers/pulumi-stackit/issues/new).
 
 To ensure we can provide the best support to your issue, follow these guidelines:
 

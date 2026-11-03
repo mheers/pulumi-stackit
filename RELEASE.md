@@ -23,9 +23,9 @@ The version of the Pulumi provider is the same as the one for the Terraform prov
 3. Create the following git tags:
     - `VERSION="vX.X.X"; git tag "$VERSION" && git tag "provider/pkg/version/$VERSION" && git tag "provider/shim/$VERSION"`
 4. Push the git tag: `git push origin --tags`
-5. The [release pipeline](https://github.com/stackitcloud/pulumi-stackit/actions/workflows/release.yaml) will build the release and publish it on GitHub
+5. The [release pipeline](https://github.com/mheers/pulumi-stackit/actions/workflows/release.yaml) will build the release and publish it on GitHub
 6. Ensure the release was created properly using the 
-    - [GitHub releases page](https://github.com/stackitcloud/pulumi-stackit/releases)
+    - [GitHub releases page](https://github.com/mheers/pulumi-stackit/releases)
     - [Pulumi registry](https://www.pulumi.com/registry/packages)
 7. Ensure the packages where properly published (e.g. to npm)
-    - [npm](https://www.npmjs.com/package/@stackitcloud/pulumi-stackit)
+    - [npm](https://www.npmjs.com/package/@mheers/pulumi-stackit)

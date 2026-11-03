@@ -7,9 +7,9 @@
 5. Run `make install_nodejs_sdk`
 6. Ensure that the `pulumi-resource-stackit` provider is in your GOPATH (located under pulumi-stackit/bin)
 7. Use an existing example under e.g. the resources folder and adjust the example e.g. modify the project id.
-8. Ensure that the local `@stackitcloud/pulumi-stackit` module is installed.
+8. Ensure that the local `@mheers/pulumi-stackit` module is installed.
     a. If you see errors mentioning that the module is not present install it via
-       `npm install @stackitcloud/pulumi-stackit <path-to:sdk/nodejs/bin>`
+       `npm install @mheers/pulumi-stackit <path-to:sdk/nodejs/bin>`
 
 9. Ensure you have set up the authentication accordingly (see [Authentication](../../README.md#authentication))
     a. If you are using the `credentials.json` method you don't need to do further steps, you are all set up.

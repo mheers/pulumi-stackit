@@ -1,5 +1,5 @@
 import * as pulumi from "@pulumi/pulumi";
-import * as stackit from "@stackitcloud/pulumi-stackit";
+import * as stackit from "@mheers/pulumi-stackit";
 
 export const publicIpProjectId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
 export const publicIpNetworkInterfaceId = "example-publicIp-name"

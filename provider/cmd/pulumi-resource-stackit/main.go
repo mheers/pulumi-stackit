@@ -21,7 +21,7 @@ import (
 	_ "embed"
 
 	"github.com/pulumi/pulumi-terraform-bridge/v3/pkg/pf/tfbridge"
-	stackit "github.com/stackitcloud/pulumi-stackit/provider"
+	stackit "github.com/mheers/pulumi-stackit/provider"
 )
 
 //go:embed schema-embed.json

@@ -7,7 +7,7 @@ layout: package
 
 The STACKIT Pulumi Provider (ALPHA) is available as a package in the following Pulumi languages:
 
-* TypeScript: [`@stackitcloud/pulumi-stackit`](https://www.npmjs.com/package/@stackitcloud/pulumi-stackit)
+* TypeScript: [`@mheers/pulumi-stackit`](https://www.npmjs.com/package/@mheers/pulumi-stackit)
 
 ## Authentication
 
@@ -37,7 +37,7 @@ To use the key flow, you need to have a service account key, which must have an 
 
 When creating the service account key, a new pair can be created automatically, which will be included in the service account key.
 
-**Optionally**, you can provide your own private key when creating the service account key, which will then require you to also provide it explicitly to the [STACKIT Pulumi Provider](https://github.com/stackitcloud/pulumi-stackit), additionally to the service account key. Check the STACKIT Knowledge Base for an [example of how to create your own key-pair](https://docs.stackit.cloud/platform/access-and-identity/service-accounts/how-tos/manage-service-account-keys/).
+**Optionally**, you can provide your own private key when creating the service account key, which will then require you to also provide it explicitly to the [STACKIT Pulumi Provider](https://github.com/mheers/pulumi-stackit), additionally to the service account key. Check the STACKIT Knowledge Base for an [example of how to create your own key-pair](https://docs.stackit.cloud/platform/access-and-identity/service-accounts/how-tos/manage-service-account-keys/).
 
 To configure the key flow, follow this steps:
 

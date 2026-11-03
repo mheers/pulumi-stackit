@@ -8,7 +8,7 @@ import (
 	"reflect"
 
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
-	"github.com/stackitcloud/pulumi-stackit/sdk/go/stackit/internal"
+	"github.com/mheers/pulumi-stackit/sdk/go/stackit/internal"
 )
 
 // Gets details about a federated identity provider configured for a STACKIT service account.

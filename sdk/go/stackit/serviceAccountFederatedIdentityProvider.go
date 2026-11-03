@@ -9,7 +9,7 @@ import (
 
 	"errors"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
-	"github.com/stackitcloud/pulumi-stackit/sdk/go/stackit/internal"
+	"github.com/mheers/pulumi-stackit/sdk/go/stackit/internal"
 )
 
 // Manages a federated identity provider for a STACKIT service account to enable workload identity federation.

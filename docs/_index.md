@@ -6,14 +6,14 @@ layout: package
 
 <div align="center">
 <br>
-<img src="https://raw.githubusercontent.com/stackitcloud/pulumi-stackit/refs/heads/main/.github/images/stackit-logo.svg" alt="STACKIT logo" width="50%"/>
+<img src="https://raw.githubusercontent.com/mheers/pulumi-stackit/refs/heads/main/.github/images/stackit-logo.svg" alt="STACKIT logo" width="50%"/>
 <br>
 <br>
 </div>
 
 # STACKIT Pulumi Provider (ALPHA)
 
-[![GitHub License](https://img.shields.io/github/license/stackitcloud/pulumi-stackit)](https://www.apache.org/licenses/LICENSE-2.0)
+[![GitHub License](https://img.shields.io/github/license/mheers/pulumi-stackit)](https://www.apache.org/licenses/LICENSE-2.0)
 
 > [!WARNING]
 > This STACKIT Pulumi Provider is in an ALPHA state. Currently, only IaaS and Resource Manager services in TypeScript are supported. More functionality will be supported soon. Your feedback is appreciated! Feel free to open GitHub issues to provide feature requests and bug reports.
@@ -34,20 +34,20 @@ Apache 2.0
 > [!NOTE]
 > Currently only the npm package is available via the mentioned packages managers but the other ones can be installed locally by using the generated sdks directly.
 > Keep in mind that this is in ALPHA state and only the Resource Manager and IaaS service for Node.js is supported.
-> E.g. in order to create and install the TypeScript SDK you can use the following [guide](https://github.com/stackitcloud/pulumi-stackit/blob/main/examples/ts/README.md).
+> E.g. in order to create and install the TypeScript SDK you can use the following [guide](https://github.com/mheers/pulumi-stackit/blob/main/examples/ts/README.md).
 
 ### Node.js (JavaScript/TypeScript)
 
 To use from JavaScript or TypeScript in Node.js, install using either `npm`:
 
 ```bash
-npm install @stackitcloud/pulumi-stackit
+npm install @mheers/pulumi-stackit
 ```
 
 or `yarn`:
 
 ```bash
-yarn add @stackitcloud/pulumi-stackit
+yarn add @mheers/pulumi-stackit
 ```
 
 ## Example
@@ -58,7 +58,7 @@ yarn add @stackitcloud/pulumi-stackit
 
 ```typescript
 import * as pulumi from "@pulumi/pulumi";
-import * as stackit from "@stackitcloud/pulumi-stackit";
+import * as stackit from "@mheers/pulumi-stackit";
 
 const exampleWithName = new stackit.Network("example_with_name", {
     projectId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",                          // Replace with your actual project ID
@@ -69,7 +69,7 @@ const exampleWithName = new stackit.Network("example_with_name", {
 {{% /choosable %}}
 {{< /chooser >}}
 
-For more examples, please have a look at the [Examples](https://github.com/stackitcloud/pulumi-stackit/blob/main/examples).
+For more examples, please have a look at the [Examples](https://github.com/mheers/pulumi-stackit/blob/main/examples).
 
 A detailed authentication guide, information on how to use beta and experimental resources, and available configuration options can be found under [Installation Configuration](./installation-configuration).
 

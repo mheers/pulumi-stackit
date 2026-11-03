@@ -1,3 +1,3 @@
-module github.com/stackitcloud/pulumi-stackit/provider/pkg/version
+module github.com/mheers/pulumi-stackit/provider/pkg/version
 
-go 1.26
+go 1.27.3
